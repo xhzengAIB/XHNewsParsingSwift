@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D959CE519404DAA008E110D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D959CE419404DAA008E110D /* AppDelegate.swift */; };
+		7D959CEC19404DAA008E110D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D959CEA19404DAA008E110D /* Main.storyboard */; };
+		7D959CEE19404DAA008E110D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D959CED19404DAA008E110D /* Images.xcassets */; };
+		7D959CFA19404DAA008E110D /* XHNewsParsingSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D959CF919404DAA008E110D /* XHNewsParsingSwiftTests.swift */; };
+		7D959D0419404DFF008E110D /* XHNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D959D0319404DFF008E110D /* XHNewsTableViewController.swift */; };
+		7D959D0619404E4B008E110D /* XHWebViewDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D959D0519404E4B008E110D /* XHWebViewDetailController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D959CF419404DAA008E110D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D959CD719404DAA008E110D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D959CDE19404DAA008E110D;
+			remoteInfo = XHNewsParsingSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7D959CDF19404DAA008E110D /* XHNewsParsingSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XHNewsParsingSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D959CE319404DAA008E110D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D959CE419404DAA008E110D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D959CEB19404DAA008E110D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7D959CED19404DAA008E110D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7D959CF319404DAA008E110D /* XHNewsParsingSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XHNewsParsingSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D959CF819404DAA008E110D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D959CF919404DAA008E110D /* XHNewsParsingSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XHNewsParsingSwiftTests.swift; sourceTree = "<group>"; };
+		7D959D0319404DFF008E110D /* XHNewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XHNewsTableViewController.swift; sourceTree = "<group>"; };
+		7D959D0519404E4B008E110D /* XHWebViewDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XHWebViewDetailController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D959CDC19404DAA008E110D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D959CF019404DAA008E110D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D959CD619404DAA008E110D = {
+			isa = PBXGroup;
+			children = (
+				7D959CE119404DAA008E110D /* XHNewsParsingSwift */,
+				7D959CF619404DAA008E110D /* XHNewsParsingSwiftTests */,
+				7D959CE019404DAA008E110D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D959CE019404DAA008E110D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D959CDF19404DAA008E110D /* XHNewsParsingSwift.app */,
+				7D959CF319404DAA008E110D /* XHNewsParsingSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D959CE119404DAA008E110D /* XHNewsParsingSwift */ = {
+			isa = PBXGroup;
+			children = (
+				7D959CE419404DAA008E110D /* AppDelegate.swift */,
+				7D959D0319404DFF008E110D /* XHNewsTableViewController.swift */,
+				7D959D0519404E4B008E110D /* XHWebViewDetailController.swift */,
+				7D959CEA19404DAA008E110D /* Main.storyboard */,
+				7D959CED19404DAA008E110D /* Images.xcassets */,
+				7D959CE219404DAA008E110D /* Supporting Files */,
+			);
+			path = XHNewsParsingSwift;
+			sourceTree = "<group>";
+		};
+		7D959CE219404DAA008E110D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D959CE319404DAA008E110D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D959CF619404DAA008E110D /* XHNewsParsingSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D959CF919404DAA008E110D /* XHNewsParsingSwiftTests.swift */,
+				7D959CF719404DAA008E110D /* Supporting Files */,
+			);
+			path = XHNewsParsingSwiftTests;
+			sourceTree = "<group>";
+		};
+		7D959CF719404DAA008E110D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D959CF819404DAA008E110D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D959CDE19404DAA008E110D /* XHNewsParsingSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D959CFD19404DAA008E110D /* Build configuration list for PBXNativeTarget "XHNewsParsingSwift" */;
+			buildPhases = (
+				7D959CDB19404DAA008E110D /* Sources */,
+				7D959CDC19404DAA008E110D /* Frameworks */,
+				7D959CDD19404DAA008E110D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XHNewsParsingSwift;
+			productName = XHNewsParsingSwift;
+			productReference = 7D959CDF19404DAA008E110D /* XHNewsParsingSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D959CF219404DAA008E110D /* XHNewsParsingSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D959D0019404DAA008E110D /* Build configuration list for PBXNativeTarget "XHNewsParsingSwiftTests" */;
+			buildPhases = (
+				7D959CEF19404DAA008E110D /* Sources */,
+				7D959CF019404DAA008E110D /* Frameworks */,
+				7D959CF119404DAA008E110D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D959CF519404DAA008E110D /* PBXTargetDependency */,
+			);
+			name = XHNewsParsingSwiftTests;
+			productName = XHNewsParsingSwiftTests;
+			productReference = 7D959CF319404DAA008E110D /* XHNewsParsingSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D959CD719404DAA008E110D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "广州华多网络科技有限公司 多玩事业部 iOS软件工程师 曾宪华";
+				TargetAttributes = {
+					7D959CDE19404DAA008E110D = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					7D959CF219404DAA008E110D = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 7D959CDE19404DAA008E110D;
+					};
+				};
+			};
+			buildConfigurationList = 7D959CDA19404DAA008E110D /* Build configuration list for PBXProject "XHNewsParsingSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D959CD619404DAA008E110D;
+			productRefGroup = 7D959CE019404DAA008E110D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D959CDE19404DAA008E110D /* XHNewsParsingSwift */,
+				7D959CF219404DAA008E110D /* XHNewsParsingSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D959CDD19404DAA008E110D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D959CEC19404DAA008E110D /* Main.storyboard in Resources */,
+				7D959CEE19404DAA008E110D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D959CF119404DAA008E110D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D959CDB19404DAA008E110D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D959D0419404DFF008E110D /* XHNewsTableViewController.swift in Sources */,
+				7D959CE519404DAA008E110D /* AppDelegate.swift in Sources */,
+				7D959D0619404E4B008E110D /* XHWebViewDetailController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D959CEF19404DAA008E110D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D959CFA19404DAA008E110D /* XHNewsParsingSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D959CF519404DAA008E110D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D959CDE19404DAA008E110D /* XHNewsParsingSwift */;
+			targetProxy = 7D959CF419404DAA008E110D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7D959CEA19404DAA008E110D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D959CEB19404DAA008E110D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D959CFB19404DAA008E110D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7D959CFC19404DAA008E110D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D959CFE19404DAA008E110D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = XHNewsParsingSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7D959CFF19404DAA008E110D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = XHNewsParsingSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7D959D0119404DAA008E110D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XHNewsParsingSwift.app/XHNewsParsingSwift";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XHNewsParsingSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		7D959D0219404DAA008E110D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XHNewsParsingSwift.app/XHNewsParsingSwift";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XHNewsParsingSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D959CDA19404DAA008E110D /* Build configuration list for PBXProject "XHNewsParsingSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D959CFB19404DAA008E110D /* Debug */,
+				7D959CFC19404DAA008E110D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D959CFD19404DAA008E110D /* Build configuration list for PBXNativeTarget "XHNewsParsingSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D959CFE19404DAA008E110D /* Debug */,
+				7D959CFF19404DAA008E110D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7D959D0019404DAA008E110D /* Build configuration list for PBXNativeTarget "XHNewsParsingSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D959D0119404DAA008E110D /* Debug */,
+				7D959D0219404DAA008E110D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D959CD719404DAA008E110D /* Project object */;
+}
