@@ -34,7 +34,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="B88-XX-ZFQ" kind="push" identifier="showWebDetail" id="kNP-4D-7OI"/>
+                                    <segue destination="B88-XX-ZFQ" kind="show" identifier="showWebDetail" id="c4a-3r-VMG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -92,12 +92,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="aeQ-C8-dh0" kind="relationship" relationship="rootViewController" id="QUb-Ew-MXY"/>
+                        <segue destination="aeQ-C8-dh0" kind="relationship" relationship="rootViewController" id="fPR-b2-VVv"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nai-8f-DyE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="356" y="343"/>
+            <point key="canvasLocation" x="510" y="343"/>
         </scene>
     </scenes>
 </document>

@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 class XHWebViewDetailController : UIViewController {
-    var detailID = NSInteger()
+    var detailID = NSString()
     
-    var detailURL = "http://qingbin.sinaapp.com/api/html/108035.html"
+    var detailURL = "http://qingbin.sinaapp.com/api/html/"
     
     @IBOutlet var webView : UIWebView
     
@@ -28,8 +28,7 @@ class XHWebViewDetailController : UIViewController {
     }
     
     func loadDataSource() {
-        
-        var urlString = detailURL
+        var urlString = detailURL + "\(detailID).html"
         var url = NSURL.URLWithString(urlString)
         var urlRequest = NSURLRequest(URL :NSURL.URLWithString(urlString))
         webView.loadRequest(urlRequest)

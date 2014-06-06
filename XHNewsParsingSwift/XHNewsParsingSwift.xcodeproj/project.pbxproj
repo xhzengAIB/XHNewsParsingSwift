@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D00ACC71941600F009AC5DB /* XHNewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D00ACC61941600F009AC5DB /* XHNewsItem.swift */; };
 		7D959CE519404DAA008E110D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D959CE419404DAA008E110D /* AppDelegate.swift */; };
 		7D959CEC19404DAA008E110D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D959CEA19404DAA008E110D /* Main.storyboard */; };
 		7D959CEE19404DAA008E110D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D959CED19404DAA008E110D /* Images.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D00ACC61941600F009AC5DB /* XHNewsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XHNewsItem.swift; sourceTree = "<group>"; };
 		7D959CDF19404DAA008E110D /* XHNewsParsingSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XHNewsParsingSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D959CE319404DAA008E110D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D959CE419404DAA008E110D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				7D959CE419404DAA008E110D /* AppDelegate.swift */,
+				7D00ACC61941600F009AC5DB /* XHNewsItem.swift */,
 				7D959D0319404DFF008E110D /* XHNewsTableViewController.swift */,
 				7D959D0519404E4B008E110D /* XHWebViewDetailController.swift */,
 				7D959CEA19404DAA008E110D /* Main.storyboard */,
@@ -214,6 +217,7 @@
 				7D959D0419404DFF008E110D /* XHNewsTableViewController.swift in Sources */,
 				7D959CE519404DAA008E110D /* AppDelegate.swift in Sources */,
 				7D959D0619404E4B008E110D /* XHWebViewDetailController.swift in Sources */,
+				7D00ACC71941600F009AC5DB /* XHNewsItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +405,7 @@
 				7D959CFF19404DAA008E110D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D959D0019404DAA008E110D /* Build configuration list for PBXNativeTarget "XHNewsParsingSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +414,7 @@
 				7D959D0219404DAA008E110D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

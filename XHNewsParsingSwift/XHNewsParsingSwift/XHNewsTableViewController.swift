@@ -28,11 +28,12 @@ class XHNewsTableViewController : UITableViewController {
         refreshControl.attributedTitle = NSAttributedString(string: "下拉刷新")
         refreshControl.addTarget(self, action: "loadDataSource", forControlEvents: UIControlEvents.ValueChanged)
         self.refreshControl = refreshControl
+        
+        loadDataSource();
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        loadDataSource();
     }
     
     override func didReceiveMemoryWarning() {
@@ -55,8 +56,18 @@ class XHNewsTableViewController : UITableViewController {
             } else {
                 let json = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
                 let newsDataSource = json["item"] as NSArray
+                
+                var currentNewsDataSource = NSMutableArray()
+                for currentNews : AnyObject in newsDataSource {
+                    let newsItem = XHNewsItem()
+                    newsItem.newsTitle = currentNews["title"] as NSString
+                    newsItem.newsThumb = currentNews["thumb"] as NSString
+                    newsItem.newsID = currentNews["id"] as NSString
+                    currentNewsDataSource.addObject(newsItem)
+                }
+                
                 dispatch_async(dispatch_get_main_queue(), {
-                    self.dataSource = newsDataSource
+                    self.dataSource = currentNewsDataSource
                     self.tableView.reloadData()
                     self.refreshControl.endRefreshing()
                     })
@@ -67,9 +78,10 @@ class XHNewsTableViewController : UITableViewController {
     // #pragma mark - Segues
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showWebDetail" {
-//            let indexPath = self.tableView.indexPathForSelectedRow()
-//            let object = dataSource[indexPath.row] as NSDictionary
-//            (segue.destinationViewController as XHWebViewDetailController).detailID = object["id"] as NSInteger
+            let indexPath = self.tableView.indexPathForSelectedRow()
+            let newsItem = dataSource[indexPath.row] as XHNewsItem
+            let webViewDetailController = segue.destinationViewController as XHWebViewDetailController!
+            webViewDetailController.detailID = newsItem.newsID
         }
     }
 
@@ -87,14 +99,14 @@ class XHNewsTableViewController : UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("XHNewsCell", forIndexPath: indexPath) as UITableViewCell
         
-        let object = dataSource[indexPath.row] as NSDictionary
+        let newsItem = dataSource[indexPath.row] as XHNewsItem
         
-        cell.textLabel.text = object["title"] as String
-        cell.detailTextLabel.text = object["id"] as String
+        cell.textLabel.text = newsItem.newsTitle
+        cell.detailTextLabel.text = newsItem.newsID
         cell.imageView.image = UIImage(named :"cell_photo_default_small")
         cell.imageView.contentMode = UIViewContentMode.ScaleAspectFit
         
-        let request = NSURLRequest(URL :NSURL.URLWithString(object["thumb"] as String))
+        let request = NSURLRequest(URL :NSURL.URLWithString(newsItem.newsThumb))
         NSURLConnection.sendAsynchronousRequest(request, queue: thumbQueue, completionHandler: { response, data, error in
             if error {
                 println(error)
