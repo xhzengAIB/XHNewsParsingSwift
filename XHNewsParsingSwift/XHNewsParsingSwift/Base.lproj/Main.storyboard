@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AXJ-xB-8WG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="AXJ-xB-8WG">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--News Table View Controller - News-->
+        <!--News-->
         <scene sceneID="kdP-TT-ywF">
             <objects>
                 <tableViewController id="aeQ-C8-dh0" customClass="XHNewsTableViewController" customModule="XHNewsParsingSwift" customModuleProvider="target" sceneMemberID="viewController">
@@ -12,9 +12,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="XHNewsCell" textLabel="xi2-Eg-vvn" detailTextLabel="W9g-LW-WWS" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="9q6-yq-bVU">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="XHNewsCell" textLabel="xi2-Eg-vvn" detailTextLabel="W9g-LW-WWS" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="9q6-yq-bVU">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9q6-yq-bVU" id="kUr-7H-6RM">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -34,7 +33,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="B88-XX-ZFQ" kind="show" identifier="showWebDetail" id="c4a-3r-VMG"/>
+                                    <segue destination="B88-XX-ZFQ" kind="push" identifier="showWebDetail" id="c4a-3r-VMG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -47,27 +46,23 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twx-VV-7RS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="343"/>
+            <point key="canvasLocation" x="736" y="324"/>
         </scene>
-        <!--Web View Detail Controller - Detial-->
+        <!--Detial-->
         <scene sceneID="S7o-Tw-0Ag">
             <objects>
                 <viewController id="B88-XX-ZFQ" customClass="XHWebViewDetailController" customModule="XHNewsParsingSwift" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lWp-RU-UG2"/>
-                        <viewControllerLayoutGuide type="bottom" id="phF-Ct-pgI"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="D0s-nQ-Gu5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hgb-io-qNT">
+                            <webView contentMode="scaleToFill" id="Hgb-io-qNT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detial" id="rqT-X2-vet"/>
                     <connections>
@@ -77,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12c-w9-o7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1551" y="343"/>
+            <point key="canvasLocation" x="1230" y="324"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XWG-Lt-gOW">
@@ -97,7 +92,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nai-8f-DyE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="510" y="343"/>
+            <point key="canvasLocation" x="272" y="324.70666666666665"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

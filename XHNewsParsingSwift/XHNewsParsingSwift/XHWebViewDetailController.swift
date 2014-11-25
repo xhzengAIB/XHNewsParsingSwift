@@ -14,7 +14,7 @@ class XHWebViewDetailController : UIViewController {
     
     var detailURL = "http://qingbin.sinaapp.com/api/html/"
     
-    @IBOutlet var webView : UIWebView
+    @IBOutlet var webView : UIWebView?
     
     
     override func viewDidLoad() {
@@ -29,8 +29,9 @@ class XHWebViewDetailController : UIViewController {
     
     func loadDataSource() {
         var urlString = detailURL + "\(detailID).html"
-        var url = NSURL.URLWithString(urlString)
-        var urlRequest = NSURLRequest(URL :NSURL.URLWithString(urlString))
-        webView.loadRequest(urlRequest)
+        var url: NSURL = NSURL(string: urlString)!
+        
+        var urlRequest = NSURLRequest(URL :url)
+        webView?.loadRequest(urlRequest)
     }
 }
